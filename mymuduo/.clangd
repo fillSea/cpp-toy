@@ -1,0 +1,32 @@
+CompileFlags:
+  Add:
+    - -std=c++20
+    - -I${workspaceFolder}
+  Remove:
+    - -mwindows
+    - -fno-rtti
+    - -fno-exceptions
+
+Diagnostics:
+  Enabled: true
+  WarningsAsErrors: false
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+
+Index:
+  Background: Skip
+  Threads: 8
+  MaxWorkQueueSize: 1000
+  MaxFileSize: 10485760 # 10MB
+  ProjectRoot: ${workspaceFolder}
+
+Cache:
+  Directory: .cache/clangd
+
+Format:
+  Style: "file"
+  FallbackStyle: "Google"
+
+Hover:
+  DetailedLabel: true
+  ShowAKA: true

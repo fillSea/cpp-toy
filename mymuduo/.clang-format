@@ -1,0 +1,22 @@
+# 基本选项
+Language: Cpp
+BasedOnStyle: Google
+
+# 缩进相关
+IndentWidth: 4              # 缩进宽度为4个空格
+TabWidth: 4                 # Tab宽度为4个空格
+UseTab: Always              # 始终使用Tab
+AccessModifierOffset: -4     # 访问修饰符（public/private/protected）不缩进
+
+# 花括号相关
+BreakBeforeBraces: Attach   # 花括号不换行
+
+# 行长度
+ColumnLimit: 90            # 行最大长度
+
+# 空格相关
+SpaceBeforeParens: ControlStatements  # 控制语句括号前加空格
+
+# 其他
+AlignConsecutiveDeclarations: false   # 不对齐连续声明
+SortIncludes: true                    # 自动排序include
